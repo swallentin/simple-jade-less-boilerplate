@@ -50,7 +50,7 @@
   var maps = function(options) {
 
       $.each(this, function(i, element) {
-        
+
         options.center = new google.maps.LatLng(options.center[0], options.center[1]);
 
         $this = $(this);
@@ -76,7 +76,7 @@
 
           var test = function(e) {
             this.infoWindow.open(map, this);
-            map.setCenter(this.position);
+            map.setCenter(this.position)
             e.preventDefault();
           };
 
